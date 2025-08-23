@@ -1,0 +1,282 @@
+@import "./fonts.css";
+@import "./normalize.css";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted skyblue;
+  outline-offset: 4px;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  font-size: 62.5%; /* 1rem = 10px */
+  font-weight: 400;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+ul,
+li {
+  display: inline-block;
+  position: relative;
+}
+
+ul,
+li,
+a {
+  display: inline-block;
+  padding: 1rem 1rem;
+  text-align: center;
+}
+
+
+
+img {
+  display: flex;
+  object-fit: cover;
+}
+
+h1 {
+  margin: 0; /* normalize cssni yo'qotish uchun */
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Epilogue";
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px; /* o'zgaruvchan */
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+}
+.logo_img {
+  color: #151515;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.nav__list {
+  display: flex;
+  justify-content: start;
+}
+.nav__item {
+}
+.nav__item_link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #686868;
+}
+
+ul li ul.dropdown li {
+  display: flex;
+  flex-direction: row;
+}
+
+ul li ul.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start ;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  box-shadow: 0px 10px 40px 0px #00000026;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  a{
+    padding: 0.4rem 1rem;
+    display: flex;
+    color: #686868;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  img{
+    margin-right: 1.5rem;
+  }
+}
+
+.nav__path{
+  display: none;
+}
+
+ul li:hover .nav__path{
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+ul li a:hover {
+  background-color: #ffffff;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+  color:  #686868;
+}
+
+ul li:hover a{
+  color: #151515;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.register {
+  display: flex;
+  align-items: center;
+}
+.register__login {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #686868;
+}
+
+.register__login:hover{
+  color: #151515;
+}
+
+.register__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #686868;
+  text-transform: capitalize;
+  width: 104px;                        
+  height: 42px;
+  border-radius: 14px;
+  border: 1.5px solid #686868;
+}
+
+.register__btn:hover{
+  color: #151515;
+}
+
+.register__btn:active{
+  background-color: #151515;
+  color: #fafafa;
+  border: none;
+}
+
+/* HERO SECTION */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 6.7rem;
+  padding-bottom: 13rem;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin-left: 16.5rem;
+  
+}
+.hero__title {
+  padding-top: 11.7rem;
+ font-weight: 700;
+ font-size: 8rem;
+ line-height: 8rem;
+ letter-spacing: -1.11px;
+ color: #151515;
+ margin-bottom: 8.4rem;
+}
+
+.hero__description {
+  width: 445px;
+  height: 84px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #686868;
+  margin-bottom: 5.1rem;
+}
+.hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 163px;
+  height: 56px;
+  background: #151515;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #fafafa;
+  letter-spacing: -0.25px;
+  margin-bottom: 10.8rem;
+}
+
+.hero__btn:hover{
+  color: #333333;
+  background-color: #fafafa;
+  border:1.5px solid #333333;
+}
+
+.hero__btn:active{
+  background-color: #686868;
+  color: #fafafa;
+}
+.companys__logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.hero__img {
+}
+.image {
+}
